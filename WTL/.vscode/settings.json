@@ -1,0 +1,7 @@
+{
+	"editor.fontFamily": "Fira Code",
+	"files.associations": {
+		"iostream": "cpp",
+		"valarray": "cpp"
+	}
+}

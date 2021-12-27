@@ -1,0 +1,21 @@
+<!ELEMENT  candidate (college)>
+<!ELEMENT  college (staff)>
+
+<!-- <!ELEMENT  college (name,address,contact,staff)>
+
+<!ELEMENT  name (#PCDATA)>
+
+<!ELEMENT  address (street,postcode,city,state)>
+<!ELEMENT  street (#PCDATA)>
+<!ELEMENT  postcode (#PCDATA)>
+<!ELEMENT  city (#PCDATA)>
+<!ELEMENT  state (#PCDATA)>
+
+<!ELEMENT  contact (phone, website)>
+<!ELEMENT  phone (#PCDATA)>
+<!ELEMENT  website (#PCDATA)> -->
+
+<!ELEMENT  staff (students1)>
+<!ELEMENT  students1 (student*)>
+<!ELEMENT  student (#PCDATA|name)*>
+<!ELEMENT  name (#PCDATA)>

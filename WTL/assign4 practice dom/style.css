@@ -1,0 +1,146 @@
+/* body{
+    padding: 3rem 0px;
+    background-color:#009DAE;
+    font: 1em sans-serif;;
+} */
+
+.card{
+    width:55%;
+    margin:0px auto;
+    background-color:#B983FF;
+     border:  9px solid black ; 
+    border-radius: 1.2rem;
+    /* add  */
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+label {
+
+    font-weight: 500;
+
+}
+
+input[type=text],input[type=email],input[type=number],input[type=password]{
+
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    margin:0.2rem;
+    width:25%;
+
+}
+
+h1{
+    text-align: center;
+}
+
+footer{
+    width:25%;
+    margin:0 auto;
+}
+
+footer > p{
+    display: inline;
+}
+
+a{
+    color:brown;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.btn{
+    margin: 0 auto ;
+      width: 15%;
+    /* width:100%; */
+}
+
+button{
+    padding: 0.5rem;
+    width:100%;
+    /* font-size: medium; */
+     border-radius: 0.4rem; 
+    
+}
+
+textarea{
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    margin:0.2rem;
+    height:15%;
+}
+
+#change{
+    background-color: #B983FF;
+    width:25%;
+    border: 0.1rem solid black;
+}
+
+.container{
+    width:40%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    background-color:mediumaquamarine;
+    border: 0.2rem solid black;
+    border-radius: 10%;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img{
+    height:35%;
+    width:35%;
+    border-radius: 50%;
+    border: 0.2rem solid black;
+ 
+}
+
+#name{
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom:1rem;
+}
+
+table{
+    width:50%;
+}
+
+td{
+    text-align: center;
+}
+
+th,td{
+    padding:0.6rem;
+}
+
+.edu{
+    font-size: 1.2rem;
+
+    font-variant: normal;
+}
+
+th{
+    color:navy;
+    border-bottom:2px solid black;
+    font-size:1.1rem;
+}
+
+
+tr:hover {color: brown;}
+
+table {
+    border:2px solid black;
+    border-collapse: collapse;
+  }
+
+  td{
+      border-right:2px solid black;
+  }
+
+  /* .prajjwal{
+
+ background-image:url('5243451.jpg');
+        
+  } */

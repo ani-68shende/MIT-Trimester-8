@@ -1,0 +1,126 @@
+body{
+	background: linear-gradient(to bottom,rgb(101,157,189),rgb(55, 138, 185));
+	color: #242582;
+	font-family: cursive;
+	margin: 0px;
+}
+
+.menu{
+	height: 70px;
+	margin: 0 auto;
+	padding: 0px;
+	/* background-color: rgba(102, 18, 22, 0.2); */
+	background-color: #fbeec1d2;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+.menu li {
+	float: left;
+	border-right: 1px solid #cfb143;
+}
+
+.menu a {
+	display: block;
+	height: 70px;
+	margin: 0px 1px;
+	padding: 0px 20px 0px 20px;
+	line-height: 70px;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.menu a:hover {
+	background-color: #8d825b;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.title {
+	background-color:rgb(218,173,134); 
+	color:#6e692d; 
+	border-radius: 20px;
+	padding:5px 25px;
+}
+
+.post{
+	padding: 10px; 
+	margin: 10px;
+}
+
+.post p, .post ul{
+	font-size:20px;
+}
+
+.post h2{
+	font-size:25px;
+}
+
+#logo ul{
+	list-style: none;
+}
+
+label {
+	margin-right:15px;
+}
+
+textarea {
+	vertical-align: middle;
+	width: 50%;
+	padding: 12px;  
+	border: 1px solid #cfb143; 
+	border-radius: 8px;
+	margin-top: 12px;
+	margin-bottom: 32px; 
+	align-self: right;
+	color: #242582;
+}
+
+input, select {
+	width: 50%;
+	padding: 12px;  
+	border: 1px solid #cfb143; 
+	border-radius: 8px;
+	margin-top: 12px;
+	margin-bottom: 32px; 
+	align-self: right;
+	color: #242582;
+}
+
+button {
+	background-color: #cfb143;
+	color: white;
+	margin: 10px;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	margin: auto; 
+}
+
+#formele {
+	text-align: right;
+	float: left;
+	width: 50%;
+	height:72%;
+}
+
+.submitbutton {
+	text-align:center;
+	float: left;
+	width: 50%;
+	height:72%;
+}
+
+#error {
+	display: none;
+	color: rgb(255, 14, 14)
+}

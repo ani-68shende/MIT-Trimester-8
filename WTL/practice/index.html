@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+    <style type="text/css">
+        body {
+            margin: 30px;
+            padding-top: 30px;
+        }
+        
+        label,
+        input {
+            display: block;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: DodgerBlue;
+        }
+        
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+    <script type="text/javascript">
+        setInterval(showTime, 1000);
+
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+
+            if (hour > 12) {
+                hour -= 12;
+            }
+            if (hour == 0) {
+                hr = 12;
+            }
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = hour + ":" + min + ":" + sec;
+
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+        showTime();
+
+        function js_style() {
+            //font styles added by JS:
+            text.style.fontSize = "14pt";
+            text.style.fontFamily = "Comic Sans MS";
+            text.style.color = "green";
+        }
+
+        function getAttributes() {
+            var u = document.getElementById("w3r").href;
+            alert('The value of the href attribute of the link is : ' + u);
+            var v = document.getElementById("w3r").hreflang;
+            alert('The value of the hreflang attribute of the link is : ' + v);
+            var w = document.getElementById("w3r").rel;
+            alert('The value of the rel attribute of the link is : ' + w);
+            var x = document.getElementById("w3r").target;
+            alert('The value of the taget attribute of the link is : ' + x);
+            var y = document.getElementById("w3r").type;
+            alert('The value of the type attribute of the link is : ' + y);
+        }
+
+        //First create a list of all bold items 
+        var bold_Items;
+        window.onload = getBold_items();
+        // Collect all <strong> tags
+        function getBold_items() {
+            bold_Items = document.getElementsByTagName('strong');
+        }
+        // iterate all bold tags and change color  
+        function highlight() {
+            for (var i = 0; i < bold_Items.length; i++) {
+                bold_Items[i].style.color = "red";
+            }
+        }
+
+        // On mouse out highlighted words become black
+        function return_normal() {
+            for (var i = 0; i < bold_Items.length; i++) {
+                bold_Items[i].style.color = "black";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Live Clock</h3>
+    <div id="clock">
+        8:10:45
+    </div>
+    <div>
+        <p>
+            <a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.google.com/">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt laudantium sint fugit? Doloremque quaerat officiis rem quod, suscipit quasi debitis?</a>
+        </p>
+        <button onclick="getAttributes()">Click here to get  attributes value</button>
+    </div>
+    <div>
+        <table id="myTable" border="1">
+        </table>
+        <form>
+            <input type="button" onclick="createTable()" value="Create the table">
+        </form>
+    </div>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+
+</html>

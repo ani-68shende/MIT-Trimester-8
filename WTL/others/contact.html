@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>World Heritage Site - Ellora Caves</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <script>
+        function checkvalidation() {
+            var phone = "(0|91)?[7-9][0-9]{9}";
+            var elements = ['fname', 'lname', 'email', 'number', 'query', 'country'];
+            var error = [];
+
+            // First Name validation
+            if (document.getElementById(elements[0]).value.length == 0) error.push(elements[0]);
+            //Last Name validation
+            if (document.getElementById(elements[1]).value.length == 0) error.push(elements[1]);
+            //Query validation
+            if (document.getElementById(elements[4]).value.length == 0) error.push(elements[4]);
+            //Email validation
+            var eid = document.getElementById(elements[2]).value;
+            let atpos = eid.indexOf("@");
+            let dotpos = eid.lastIndexOf(".");
+            if (atpos < 1 || (dotpos - atpos < 2)) {
+                error.push(elements[2]);
+            }
+            //Location validation
+            if (!document.getElementById("country").value) {
+                error.push(elements[5]);
+            }
+            //Phone number validation
+            if (phone.match(document.getElementById(elements[3]).value)) {
+                error.push(elements[3]);
+            }
+            if (error.length > 0) {
+                document.getElementById("error").style.display = "block";
+                for (i in error) {
+                    document.getElementById(error[i]).value = "";
+                    document.getElementById(error[i]).style.border = "3px solid red";
+                }
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body style="color: #242582;">
+    <div class="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div id="wrapper" style="margin: 30px 30px 0 30px ">
+
+        <div id="header">
+            <div id="logo">
+                <center>
+                    <h1>Contact Us</h1>
+                </center>
+            </div>
+        </div>
+        <div id="page">
+            <form onsubmit="return checkvalidation()" action="./submit.html">
+                <div id="formele">
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your First name.."> <br>
+
+                    <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your Last name.."><br>
+
+                    <label for="email">Email Address: </label>
+                    <input type="text" id="email" name="email" placeholder="Your email address.."> <br>
+
+                    <label for="country">Location: </label>
+                    <select id="country" name="country">
+                        <option value="" disabled selected>Select Your Country</option>
+                        <option value="IN">India</option>
+                        <option value="Oth">Other</option>
+                    </select><br>
+
+
+                    <label for="number">Phone number: </label>
+                    <input type="text" id="number" name="number" placeholder="Your phone number.."> <br>
+                </div>
+                <div class="submitbutton">
+                    <label for="query">Query: </label>
+                    <textarea id="query" name="query" rows="10" cols="50"></textarea> <br>
+                    <button type="submit">Submit</button><br>
+
+                    <span id="error">Error occurred in validation</span><br>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

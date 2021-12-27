@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <title>World Heritage Site - Ellora Caves</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <script>
+        function changeimage() {
+            document.getElementsByTagName("img")[0].src = "./images/elloraCaves(2).jpg";
+        }
+
+        function addnode() {
+            const head = document.createElement("H2");
+            head.className = "title";
+            const node = document.createTextNode("This is new H1 node using DOM");
+            head.appendChild(node);
+
+            const head1 = document.createElement("p");
+            head1.style.paddingLeft = "25px";
+            const node1 = document.createTextNode("This is new p node using DOM");
+            head1.appendChild(node1);
+
+            const parent = document.createElement("div");
+            parent.className = "post";
+            parent.appendChild(head);
+            parent.appendChild(head1);
+            const final = document.getElementById("page");
+            const attr = document.getElementById("attr");
+            final.insertBefore(parent, attr);
+        }
+
+        function deletenode() {
+            var ele = document.getElementById("page").getElementsByTagName("div");
+            ele[ele.length - 2].remove();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div id="wrapper" style="margin: 30px 30px 0 30px ">
+        <div id="header">
+            <div id="logo" style="padding: 0 10px">
+                <h1>
+                    <center>Ellora Caves</center>
+                </h1>
+                <img onclick='changeimage()' src="./images/elloraCaves.jpg" alt="Ellora Caves" height="65%" style="border-radius: 15px; float: left; margin-right: 30px; margin-left: 10px;">
+                <img src="./images/in.svg" alt="India" width="15%" style="float: left; margin-right:50px"> <span style="font-size:20px;"><b>India</b></span><br> State: Maharashtra <br> District: Aurangabad <br> Taluka: Khulatabad <br> Village: Verul
+                <div>
+                    <h2>Table of Contents</h2>
+                    <ul>
+                        <li>
+                            <h3><a href="#description">Description</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="#integrity">Integrity</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="#authenticity">Authenticity</a></h3>
+                        </li>
+                    </ul>
+                    <button onclick="addnode()">Click Me to add Node</button>
+                    <button onclick="deletenode()" style="background-color: rgb(16, 219, 43); margin-left: 10px;">Click Me to delete Node</button>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div id="page" style="float: left;">
+            <div id="description" class="post">
+                <h2 class="title">Description</h2>
+                <ul>
+                    <li>These <b>34 monasteries and temples</b>, extending over more than 2 km, were dug side by side in the wall of a high basalt cliff, not far from Aurangabad, in Maharashtra.</li>
+                    <li>Ellora, with its uninterrupted sequence of monuments dating from <u>A.D. 600 to 1000</u>, brings the civilization of ancient India to life.</li>
+                    <li>Not only is the Ellora complex a unique artistic creation and a technological exploit but, with its sanctuaries devoted to Buddhism, Hinduism and Jainism, it illustrates the spirit of tolerance that was characteristic of ancient India.</li>
+                </ul>
+            </div>
+            <div id="integrity" class="post">
+                <h2 class="title">Integrity</h2>
+                <p style="padding-left: 25px;">Ellora Caves includes all the elements necessary to express its Outstanding Universal Value, including the architectural and sculptural elements that bear witness to Buddhism, Brahmanism, and Jainism in an uninterrupted sequence of monuments
+                    from AD 600 to 1000. The property, which encompasses the ensemble along with its natural setting, is of adequate size to ensure the complete representation of features and processes that convey the property’s significance, and does
+                    not suffer from adverse effects of development and/or neglect. Identified potential threats to the integrity of the property include visitor and environmental management, seepage and cracking in the caves, and the capacity of conservation
+                    staff at the property.</p>
+            </div>
+            <div id="authenticity" class="post">
+                <h2 class="title">Authenticity</h2>
+                <p style="padding-left: 25px;">The authenticity of Ellora Caves is expressed through the architectural forms and designs such as the viharas (monasteries), chaityagriha (sanctuary), and monolithic temples belonging to three different faiths. The materials, locations,
+                    and natural setting also play significant roles in determining the authenticity of the property. The Ellora Caves are authentic in terms of the forms and designs, materials and substance, and locations and setting of paintings, rock-cut
+                    architecture, sculptures, and unfinished temples of three different faiths, i.e. Buddhism, Brahmanism, and Jainism.</p>
+            </div>
+            <div id="attr" class="post" style="text-align:center;">
+                For more infomation, see <a href="https://whc.unesco.org/en/list/243/">this Link</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

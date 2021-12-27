@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="dom.css">
+    <script>
+        setInterval(showTime, 1000);
+
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+
+            if (hour > 12) {
+                hour -= 12;
+            }
+            if (hour == 0) {
+                hr = 12;
+            }
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = hour + ":" + min + ":" + sec;
+
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+        showTime();
+    </script>
+</head>
+
+<body>
+    <div id="clock">8:10:45</div>
+    <div class="wrapper">
+        <header>
+            <h2>Slider</h2>
+            <h4>Use the slider to adjust the value</h4>
+        </header>
+        <div class="price-input">
+            <div class="field">
+                <input type="number" class="input-min" value="1000">
+            </div>
+        </div>
+        <div class="slider">
+
+        </div>
+    </div>
+    <script src="clock2.js"></script>
+</body>
+
+</html>

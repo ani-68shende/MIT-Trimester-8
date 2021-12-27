@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE candidate SYSTEM "candidate.dtd">
+<candidate>
+  <college>
+
+    <!-- <name>MITWPU>/</name>
+    
+    <address>
+      <street>Rambaugh Colony</street>
+      <postcode>485958</postcode>
+      <city>Pune</city>
+      <state>Maharashtra</state>
+    </address>
+    
+    <contact>
+      <phone>04-9651234</phone>
+      <website>mitwpu.edu.in</website>
+    </contact> -->
+      
+    <staff>
+      <students1>
+        <student>
+          <name>Rahul Bansal</name>
+        </student>
+        <student>
+          <name>Rajat Kumar</name>
+        </student>
+        <student>
+          <name>Dharmesh Sharma</name>
+        </student>
+        <student>
+          <name>Denzil Samuel</name>
+        </student>
+        <student>
+          <name>Atharva Yadhav</name>
+        </student>
+        <student>
+          <name>Tejas Verma</name>
+        </student>
+        <student>
+          <name>Ankit Kumar</name>
+        </student>
+        <student>
+          <name>Disha Gupta</name>
+        </student>
+        <student>
+          <name>Fraz Shaikh</name>
+        </student>
+        <student>
+          <name>Yash Shinde</name>
+        </student>
+        <student>
+          <name>Yogesh Joshi</name>
+        </student>
+        <student>
+          <name>Meena Agrawal</name>
+        </student>
+        <student>
+          <name>Aditya Joshi</name>
+        </student>
+        <student>
+          <name>Umeir Shaikh</name>
+        </student>
+        <student>
+          <name>Kiran Gupta</name>
+        </student>
+      </students1>
+    </staff>
+  </college>
+</candidate>
